@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://sprites/quit.png" type="Texture" id=1]
+[ext_resource path="res://sprites/start.png" type="Texture" id=2]
+[ext_resource path="res://MainMenu.gd" type="Script" id=3]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = -2372.0
+margin_top = -1024.0
+margin_right = 3414.0
+margin_bottom = 2017.0
+
+[node name="StartTouchScreenButton" type="TouchScreenButton" parent="."]
+scale = Vector2( 0.4, 0.4 )
+normal = ExtResource( 2 )
+action = "next"
+
+[node name="QuitTouchScreenButton2" type="TouchScreenButton" parent="."]
+position = Vector2( 153, 310 )
+scale = Vector2( 0.4, 0.4 )
+normal = ExtResource( 1 )
+action = "exit"
